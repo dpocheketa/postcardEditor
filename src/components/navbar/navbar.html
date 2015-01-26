@@ -1,0 +1,13 @@
+<nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
+  <div class="container-fluid">
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="page in pages" ng-class="{active: isActive(page)}">
+          <a ui-sref="{{page.state}}">{{page.title}}</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
