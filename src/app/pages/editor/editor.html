@@ -4,17 +4,17 @@
 			<h1>Postcard Editor</h1>
 		</div>
 		<div class="panel-body">
-			<card settings></card>
+			<card settings="settings"></card>
 		</div>
 		<div class="panel-footer">
-			<a href class="btn btn-primary">Zoom in</a>
-			<a href class="btn btn-primary">Zoom Out</a>
-			<a href class="btn btn-primary">Rotate</a>
-			<a href class="btn btn-primary">Flip</a>
+			<a href class="btn btn-primary" ng-click="zoomIn()">Zoom in</a>
+			<a href class="btn btn-primary" ng-click="zoomOut()">Zoom Out</a>
+			<a href class="btn btn-primary" ng-click="rotate()">Rotate</a>
+			<a href class="btn btn-primary" ng-click="flip()">Flip</a>
 			<a href class="btn btn-primary">Add text block</a>
 		</div>
 		<code>
-			settings
+			{{settings}}
 		</code>
 	</div>
 </div>

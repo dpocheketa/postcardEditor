@@ -1,0 +1,35 @@
+.postcard-holder{
+	height: 800px;
+	padding: 200px 0;
+	perspective: 1000;
+}
+.postcard{
+	text-align: center;
+	margin: 0 auto;
+	width: 800px;
+	transition: .3s;
+	transform-origin: 50% 50%;
+	// backface-visibility: hidden;
+}
+.postcard:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.card{
+	border: 1px solid #000;
+	height: 500px;
+	width: 250px;
+	float: left;
+}
+.card-center{
+	width: 300px;
+}
+.card-right{
+	-webkit-transform: skewY(-10deg);
+	transform-origin: 0 0;
+}
+.card-left{
+	-webkit-transform: skewY(10deg);
+	transform-origin: 100% 0;
+}
