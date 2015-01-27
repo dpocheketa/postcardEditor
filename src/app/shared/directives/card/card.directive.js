@@ -11,7 +11,6 @@ angular.module('postcardEditor').directive('card', [
 			link: function(scope, attrs, elem){
 				console.log("card");
 
-				console.log(scope.settings)
 			}
 		}
 

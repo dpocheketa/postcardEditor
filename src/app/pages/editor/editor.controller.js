@@ -10,6 +10,7 @@ angular.module('postcardEditor').controller('EditorCtrl', ['$scope', '$modal',
 				backdrop: true,
 				contentTemplate: 'components/modal/modal.html',
 				show: false,
+				animation: 'am-fade'
 			});
 
 		$scope.settings = {
@@ -18,14 +19,14 @@ angular.module('postcardEditor').controller('EditorCtrl', ['$scope', '$modal',
 			scale: 1,
 			text: {
 				left: [],
-				right: ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestias soluta pariatur ab perspiciatis, est, quidem temporibus dolores nulla laudantium omnis facere explicabo, eius sit deserunt, aperiam exercitationem. Sint, enim."],
+				right: ['Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestias soluta pariatur ab perspiciatis, est, quidem temporibus dolores nulla laudantium omnis facere explicabo, eius sit deserunt, aperiam exercitationem. Sint, enim.'],
 				center: []
 			}
 		};
 
 		$scope.modal = {
 			textParent: null,
-			newText: ""
+			newText: ''
 		};
 
 		$scope.zoomIn = function(){
