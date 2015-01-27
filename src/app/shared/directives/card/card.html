@@ -1,14 +1,29 @@
 <div class="postcard-holder">
 	<div class="postcard" style="transform: rotate({{settings.rotate + 'deg'}}) scale({{settings.scale}}) rotateX({{settings.flip + 'deg'}})">
-		<div class="card card-left">
-			Left side
+		<div class="front">
+			<div class="card card-left">
+				<h3>Left side</h3>
+				<p ng-repeat="text in settings.text.left">
+					{{text}}
+				</p>
+			</div>
+			<div class="card card-center">
+				<h3>Center side</h3>
+				<p ng-repeat="text in settings.text.center">
+					{{text}}
+				</p>
+			</div>
+			<div class="card card-right">
+				<h3>Right side</h3>
+				<p ng-repeat="text in settings.text.right">
+					{{text}}
+				</p>
+			</div>
 		</div>
-		<div class="card card-center">
-			Center side
-		</div>
-		<div class="card card-right">
-			Right side
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi saepe nesciunt minus soluta deserunt recusandae sequi dolorum explicabo. Minima iusto nam nihil repellendus tempore laboriosam, expedita ullam? Quis, sunt, at.</p>
+		<div class="back">
+			<div class="card card-left"></div>
+			<div class="card card-center"></div>
+			<div class="card card-right"></div>
 		</div>
 	</div>
 </div>

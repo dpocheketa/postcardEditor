@@ -1,0 +1,34 @@
+<div>
+	<form class="form-horizontal" name="modal-form" ng-submit="addTextTo(modal.textParent); $hide();">
+		<h3>Where you want to paste text?</h3>
+		<div class="form-group">
+			<div class="col-md-4 radio">
+				<label>
+					<input type="radio" name="text-parent" ng-model="modal.textParent" value="left">
+					Left
+				</label>
+			</div>
+			<div class="col-md-4 radio">
+				<label class="col-md-4">
+					<input type="radio" name="text-parent" ng-model="modal.textParent" value="center">
+					Center
+				</label>
+			</div>
+			<div class="col-md-4 radio">
+				<label class="col-md-4">
+					<input type="radio" name="text-parent" ng-model="modal.textParent" value="right">
+					Right
+				</label>
+			</div>
+		</div>
+		<div class="form-group" ng-if="modal.textParent">
+			<label class="col-md-12">Please, enter text: </label>
+			<div class="col-md-12">
+				<textarea class="form-control" ng-model="modal.newText"></textarea>
+			</div>
+		</div>
+		<div ng-if="modal.textParent">
+			<button type="submit" class="btn btn-success" ng-disabled="!modal.newText.length">Add</button>
+		</div>
+	</form>
+</div>
