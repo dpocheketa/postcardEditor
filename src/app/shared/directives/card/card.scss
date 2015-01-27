@@ -36,11 +36,11 @@
 	width: 300px;
 }
 .card-right{
-	-webkit-transform: skewY(-10deg);
+	transform: skewY(-10deg);
 	transform-origin: 0 0;
 }
 .card-left{
-	-webkit-transform: skewY(10deg);
+	transform: skewY(10deg);
 	transform-origin: 100% 0;
 }
 .front,
@@ -55,7 +55,7 @@
 	z-index: 2;
 }
 .back{
-	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 	.card{
 		background-color: #337cb7;
 	}
